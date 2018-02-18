@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brahmantyo.ratih_1202150244_modul2.Main3Activity"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/identitas"
+          android:text="Identitas Pemesan :"
+          android:textSize="20dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="20dp"/>
+  </LinearLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/nama"
+            android:hint="Name"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/phone"
+            android:hint="Phone"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/alamat"
+            android:hint="Alamat"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/catatan"
+            android:hint="Catatan"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pilih tanggal"
+                android:id="@+id/plhtanggal"
+                android:onClick="pilih"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pilih waktu"
+                android:id="@+id/plhwkt"
+                android:onClick="pilih1"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnpilih"
+            android:text="Pilih Pesanan"
+            android:layout_gravity="center"
+            android:onClick="pesan"/>
+
+
+</LinearLayout>
